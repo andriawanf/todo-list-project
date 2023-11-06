@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="w-full h-screen font-comfortaa">
       <Header name={"Andriawan"} />
-      <div className="flex justify-between w-full h-full">
+      <div className="flex justify-between w-full h-screen">
         <GroceryList activitys={activitys} onDeleteActivity={handleDeleteActivity} onToggleActivity={handleToggleActivity} onClearActivitys={handleClearActivitys} />
         <FormInput onAddActivity={handleAddActivity} />
       </div>
@@ -67,7 +67,7 @@ function FormInput({ onAddActivity }) {
   }
 
   return (
-    <div className="flex flex-col items-center w-full h-full p-12 bg-green-200">
+    <div className="flex flex-col items-center w-full h-auto p-12 bg-green-200">
       <h3 className="mb-8 text-2xl font-semibold">Hari ini mau ngapain kita?</h3>
       <form className="w-full" onSubmit={handleInput}>
         <div className="flex gap-6">
